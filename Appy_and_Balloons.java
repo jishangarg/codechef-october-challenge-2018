@@ -5,8 +5,8 @@ public class Main{
 		Scanner in=new Scanner(System.in);
     	  	int n=in.nextInt();
     	  	long m=in.nextInt();
-    	  	int[] ballons=new int[n];
-    	  	int[] Candies=new int[n];
+    	  	long[] ballons=new int[n];
+    	  	long[] Candies=new int[n];
     		long[] Mulcan=new long[n];
     		long[] MulcanSorted=new long[n];		
     		for(int i=0;i<n;i++)
