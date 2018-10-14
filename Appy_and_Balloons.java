@@ -34,7 +34,7 @@ public class Main{
 			{
 				if(Mulcan[i]>toCheck)
 				{
-					m2+=Math.ceil(Mulcan[i]-toCheck)/5;
+					m2+=Math.ceil((Mulcan[i]-toCheck)/Candies[i]);
 				}
 				if(m2>m)
 				{
@@ -46,8 +46,8 @@ public class Main{
 			if(flag==1)
 				start=toCheck+1;
 			else{
-			    result=toCheck;
-				end=toCheck-1;
+			    	result=toCheck;
+				end=toCheck;
 			}
 		}
 		System.out.println(result);
