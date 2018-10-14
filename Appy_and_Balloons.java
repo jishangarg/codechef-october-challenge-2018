@@ -7,8 +7,8 @@ public class Main{
     	  	long m=in.nextInt();
     	  	int[] ballons=new int[n];
     	  	int[] Candies=new int[n];
-    		int[] Mulcan=new int[n];
-    		int[] MulcanSorted=new int[n];		
+    		long[] Mulcan=new long[n];
+    		long[] MulcanSorted=new long[n];		
     		for(int i=0;i<n;i++)
     		{
       			ballons[i]=in.nextInt();	    
@@ -22,13 +22,13 @@ public class Main{
     		}		
     		
 		Arrays.sort(MulcanSorted);
-		int start=MulcanSorted[0];
-		int end=MulcanSorted[n-1];
-		int result=0;
+		long start=MulcanSorted[0];
+		long end=MulcanSorted[n-1];
+		long result=0;
 		while(end>start)
 		{
             
-			int toCheck=(start+end)/2;
+			long toCheck=(start+end)/2;
             
 			int flag=0;
 			long m2=0;
