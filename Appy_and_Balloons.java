@@ -5,20 +5,20 @@ public class Main{
 		Scanner in=new Scanner(System.in);
     	  	int n=in.nextInt();
     	  	long m=in.nextLong();
-    	  	long[] ballons=new long[n];
+    	  	long[] balloons=new long[n];
     	  	long[] Candies=new long[n];
     		long[] Mulcan=new long[n];
     		long[] MulcanSorted=new long[n];		
     		for(int i=0;i<n;i++)
     		{
-      			ballons[i]=in.nextLong();	    
+      			balloons[i]=in.nextLong();	    
     		}
 		
     		for(int i=0;i<n;i++)
     		{
       			Candies[i]=in.nextLong();	  
-      			Mulcan[i]=Candies[i]*ballons[i];
-			MulcanSorted[i]=Candies[i]*ballons[i];
+      			Mulcan[i]=Candies[i]*balloons[i];
+			MulcanSorted[i]=Candies[i]*balloons[i];
     		}		
     		
 		Arrays.sort(MulcanSorted);
