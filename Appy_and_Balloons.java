@@ -22,19 +22,19 @@ public class Main{
     		}		
     		
 		Arrays.sort(MulcanSorted);
-		int start=0;
-		int end=n-1;
-		
+		int start=MulcanSorted[0];
+		int end=MulcanSorted[n-1];
+		int result=0;
 		while(end>=start)
 		{
-			int toCheck=(MulcanSorted[end]+MulcanSorted[start])/2;
+			int toCheck=start+end/2;
 			int flag=0;
 			int m2=0;
 			for(int i=0;i<n;i++)
 			{
 				if(Mulcan[i]>toCheck)
 				{
-					m2+=ceil(Mulcan[i]-toCheck)/5;
+					m2+=Math.ceil(Mulcan[i]-toCheck)/5;
 				}
 				if(m2>m)
 				{
@@ -45,9 +45,12 @@ public class Main{
 			}
 			if(flag==1)
 				start=toCheck+1;
-			else
+			else{
+			    result=toCheck;
 				end=toCheck-1;
+			}
 		}
+		System.out.println(result);
     		
     		
 	}
