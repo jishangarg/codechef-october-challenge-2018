@@ -24,10 +24,11 @@ public class Main{
 		Arrays.sort(MulcanSorted);
 		long start=MulcanSorted[0];
 		long end=MulcanSorted[n-1];
-		long result = end;
+		double result = end-m*Candies[n-1]*1.00;
+		if(result<0)
+			result=0;
 		while(end>start)
 		{
-            
 			long toCheck=(start+end)/2;
 			int flag=0;
 			long m2=0;
@@ -42,7 +43,6 @@ public class Main{
 					flag=1;
 					break;
 				}
-				
 			}
 			if(flag==1)
 				start=toCheck+1;
@@ -50,12 +50,9 @@ public class Main{
 			    	result=toCheck;
 				end=toCheck;
 			}
-            
 		}
         
-		System.out.println(result);
-    		
-    		
+		System.out.println((long)result);
 	}
 }
 
