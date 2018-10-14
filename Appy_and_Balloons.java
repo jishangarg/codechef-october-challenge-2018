@@ -27,7 +27,7 @@ public class Main{
 		int result=0;
 		while(end>=start)
 		{
-			int toCheck=start+end/2;
+			int toCheck=(start+end)/2;
 			int flag=0;
 			int m2=0;
 			for(int i=0;i<n;i++)
